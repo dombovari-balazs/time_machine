@@ -18,7 +18,9 @@ class TestStringMethods(unittest.TestCase):
             s.split(2)
 
     def test_roman_number_first_rule(self):
-        self.assertEqual(history_machine.rule_one(history_machine.get_roman_number() ), 3205)
+        self.assertEqual(history_machine.rule_one(history_machine.get_roman_number_one()), 3205)
+        self.assertEqual(history_machine.rule_two(history_machine.get_roman_number_two()), 1994)
+
 
 if __name__ == '__main__':
     unittest.main()
