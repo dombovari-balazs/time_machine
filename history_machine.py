@@ -1,4 +1,7 @@
 
+def get_roman_number():
+    return "MMMCCV"
+
 def get_magic_dict():
     magic_dict = {
         'I': 1,
