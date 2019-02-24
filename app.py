@@ -6,11 +6,6 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-
-@app.route('/numbers')
 def numbers():
     arabic_numbers = connection.get_numbers_from_file('ARAB.IN')
     roman_numbers = [arabic_to_roman.get_result_under_4000(int(number)) for number in arabic_numbers]
