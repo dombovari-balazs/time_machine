@@ -44,7 +44,5 @@ def get_result_under_4000(number):
             number -= number_10 * 10
         arabic += arabic_to_roman_9_dict(number)
     except:
-        print("Broblem")
-        sys.exit(os.EX_SOFTWARE)
-
+        sys.exit("Broblem")
     return arabic
